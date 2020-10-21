@@ -20,9 +20,9 @@ class ClI
   end
 
   def display_list_of_movies
-    Movies.all.each do |movie|
-      puts movie.title
-    end 
+    Movies.all.each.with_index(1) do |movie, index|
+      puts "#{index}. #{movie.title}"
+    end
   end
 
 
