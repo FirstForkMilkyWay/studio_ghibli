@@ -14,8 +14,15 @@ class ClI
 
     if user_input == 'yes' || user_input == 'y'
         puts "Good Choice!"
+        display_list_of_movies
     end
 
+  end
+
+  def display_list_of_movies
+    Movies.all.each do |movie|
+      puts movie.title
+    end 
   end
 
 
