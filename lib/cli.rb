@@ -32,12 +32,20 @@ class ClI
 
     until index.between?(0, Movies.all.length - 1)
       puts "Sorry invalid input. Choose a valid number."
-      index = gets.strip.to_i - 1 
+      index = gets.strip.to_i - 1
     end
 
     movie_instance = Movies.all[index]
+
+    display_movie_details(movie_instance)
   end
 
+  def display_movie_details(movie)
+    puts movie.title
+    puts "Director " + movie.director
+    puts "Producer " + movie.producer
+    puts "Release Date " + movie.release_date
+  end
 
 
 end
