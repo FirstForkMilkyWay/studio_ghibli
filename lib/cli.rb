@@ -16,6 +16,8 @@ class ClI
         puts "Good Choice!"
         display_list_of_movies
         ask_user_for_movie_choice
+    else
+      puts "Goodbye!"
     end
 
   end
@@ -44,20 +46,22 @@ class ClI
     sleep(1)
     puts "\n"
     puts movie.title
-    puts "Director " + movie.director
-    puts "Producer " + movie.producer
-    puts "Release Date " + movie.release_date
-    sleep(3)
+    puts "Director: " + movie.director
+    puts "Producer: " + movie.producer
+    puts "Release Date: " + movie.release_date
+    sleep(2)
     puts "Would you like to see the list again of movies?"
     sleep(1)
     puts "Type 'yes' to continue or any other key to exit"
 
-    user_input = gets.strip.downcase
+     user_input = gets.strip.downcase
 
-    if user_input == 'yes' || user_input == 'y'
-        puts "Good Choice!"
-        display_list_of_movies
-        ask_user_for_movie_choice
+     if user_input == 'yes' || user_input == 'y'
+         puts "Good Choice!"
+         display_list_of_movies
+         ask_user_for_movie_choice
+    else
+      puts "Goodbye!"
     end
 
   end
