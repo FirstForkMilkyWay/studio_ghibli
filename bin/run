@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require_relative '../environment.rb'
+
+
+puts 'hi'
+
+movie = ClI.new
+movie.start
