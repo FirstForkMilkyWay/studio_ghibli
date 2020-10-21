@@ -41,10 +41,25 @@ class ClI
   end
 
   def display_movie_details(movie)
+    sleep(1)
+    puts "\n"
     puts movie.title
     puts "Director " + movie.director
     puts "Producer " + movie.producer
     puts "Release Date " + movie.release_date
+    sleep(3)
+    puts "Would you like to see the list again of movies?"
+    sleep(1)
+    puts "Type 'yes' to continue or any other key to exit"
+
+    user_input = gets.strip.downcase
+
+    if user_input == 'yes' || user_input == 'y'
+        puts "Good Choice!"
+        display_list_of_movies
+        ask_user_for_movie_choice
+    end
+
   end
 
 
