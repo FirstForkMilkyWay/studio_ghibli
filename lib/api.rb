@@ -1,4 +1,4 @@
-require 'pry'
+
 
 class API
 
@@ -13,8 +13,6 @@ class API
       movie.producer = movie_hash["producer"]
       movie.release_date = movie_hash["release_date"]
     end
-    binding.pry
-
   end
 
 
