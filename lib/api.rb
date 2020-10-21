@@ -12,9 +12,8 @@ class API
       movie.director = movie_hash["director"]
       movie.producer = movie_hash["producer"]
       movie.release_date = movie_hash["release_date"]
-    binding.pry
     end
-
+    binding.pry
 
   end
 
